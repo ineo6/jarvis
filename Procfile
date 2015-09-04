@@ -1,1 +1,1 @@
-web: bin/hubot -a qq
+web: bin/hubot -a campfire
