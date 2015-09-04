@@ -13,7 +13,7 @@
     "hubot-heroku-keepalive": "0.0.4",
     "hubot-maps": "0.0.2",
     "hubot-pugme": "^0.1.0",
-    "hubot-qq": "^1.4.0",
+    "hubot-qq": "https://github.com/xhan/qqbot.git",
     "hubot-rules": "^0.1.1",
     "hubot-scripts": "^2.16.2",
     "hubot-shipit": "^0.2.0"
