@@ -20,7 +20,7 @@ module.exports = (robot) ->
           jsonBody = JSON.parse body
           if err or jsonBody.error != 0
             console.log JSON.stringify err
-            msg.reply "Something Wrong !"
+            msg.reply "Weather Something Wrong !"
             return
           response = ''
           result = jsonBody['results'][0]['weather_data']
@@ -31,7 +31,7 @@ module.exports = (robot) ->
             response += "#{idx}:  #{day['date']} #{day['weather']} #{day['wind']} #{day['temperature']}"+'\n'
             response += day[type+'PictureUrl']+'\n'
           #console.log JSON.stringify response
-          msg.reply response
+          msg.send response
 
 check_time = (timezone = 8) ->
   d = new Date() 
