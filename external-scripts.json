@@ -3,5 +3,6 @@
   "hubot-help",
   "hubot-heroku-keepalive",
   "hubot-rules",
-  "hubot-shipit"
+  "hubot-shipit",
+  "hubot-remind-her"
 ]
