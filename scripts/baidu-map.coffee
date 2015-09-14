@@ -62,7 +62,7 @@ module.exports = (robot) ->
       res.send text
 
 #
-place_direction = (msg,origin, destination, mode='transit',callback, tactics=11,region='北京', origin_region='北京',destination_region='北京') ->
+place_direction = (msg,origin, destination, mode='transit',callback, tactics=11,region='上海', origin_region='上海',destination_region='上海') ->
   params  =
     origin:       origin
     destination:  destination
@@ -154,7 +154,7 @@ place_direction = (msg,origin, destination, mode='transit',callback, tactics=11,
 place_suggestion = (msg,pos,callback)->
   params =
     query:  pos 
-    region: '上海市'
+    region: '上海'
     ak:     ak
     output: 'json'
 
