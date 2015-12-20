@@ -7,7 +7,7 @@
   "dependencies": {
     "hubot": "^2.16.0",
     "hubot-codinglove": "^0.2.6",
-    "hubot-cron-json": "https://github.com/ineo6/hubot-cron-json.git",
+    "hubot-cron-json": "github.com/ineo6/hubot-cron-json.git",
     "hubot-diagnostics": "0.0.1",
     "hubot-help": "^0.1.1",
     "hubot-heroku-keepalive": "0.0.4",
