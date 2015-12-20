@@ -1,8 +1,8 @@
 [
   "hubot-diagnostics",
   "hubot-help",
-  "hubot-heroku-keepalive",
   "hubot-rules",
   "hubot-shipit",
-  "hubot-remind-her"
+  "hubot-codinglove",
+  "hubot-cron-json"
 ]

@@ -2,14 +2,13 @@
 #   baidu map,百度地图
 #
 # Configuration:
-#   LIST_OF_ENV_VARS_TO_SET
+#   none
 #
 # Commands:
-#   hubot hello - <what the respond trigger does>
-#   orly - <what the hear trigger does>
+#   hubot 从<哪里>到<哪里> - 获取路线
 #
 # Notes:
-#   <optional notes required for the script>
+#   none
 #
 # Author:
 #   ineo6 <arklove@qq.com>
@@ -53,7 +52,7 @@ module.exports = (robot) ->
           reg += '终点'
         #console.log JSON.stringify ret
         text = '输入的'+reg+'太模糊了: 以下是参考:'+'\n'+ ret[1].join('\n')+ret[2].join('\n')
-      else 
+      else
         _result= ret[1].join('\n')
         if mode= 'driving'
           text= '最优路线: '+_result+' \n['+ret[2]+']'
@@ -67,7 +66,7 @@ place_direction = (msg,origin, destination, mode='transit',callback, tactics=11,
     origin:       origin
     destination:  destination
     ak:           ak
-    output:      'json' 
+    output:      'json'
     mode:        mode
     tactics:     tactics
 
@@ -121,8 +120,8 @@ place_direction = (msg,origin, destination, mode='transit',callback, tactics=11,
             night = d
         is_daytime = 5 < new Date().getHours() < 23
         if is_daytime
-          price = daytime['total_price'] 
-        else 
+          price = daytime['total_price']
+        else
           price = night['total_price']
         remark = taxi['remark']
         taxi_text = remark+' 预计打车费用 '+price+'元'
@@ -153,7 +152,7 @@ place_direction = (msg,origin, destination, mode='transit',callback, tactics=11,
 
 place_suggestion = (msg,pos,callback)->
   params =
-    query:  pos 
+    query:  pos
     region: '上海'
     ak:     ak
     output: 'json'

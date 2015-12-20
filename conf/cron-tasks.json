@@ -1,0 +1,9 @@
+[
+  {
+    "time": "0 10 11 * * * ",
+    "event": "baidu_weather",
+    "params": {
+      "city": "上海"
+    }
+  }
+]
