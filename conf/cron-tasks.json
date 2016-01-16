@@ -1,6 +1,6 @@
 [
   {
-    "time": "0 0 22 * * * ",
+    "time": "0 0 20 * * * ",
     "event": "baidu_weather",
     "params": {
       "city": "上海"
