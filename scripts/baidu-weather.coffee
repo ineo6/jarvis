@@ -52,8 +52,9 @@ module.exports = (robot) ->
       type = check_time 8
       #console.log JSON.stringify result
       response += "明天(#{result[1]['date']}) #{result[1]['temperature']} #{result[1]['weather']} #{result[1]['wind']} #{result[1]['temperature']}" + '\n'
+      response += result[1][type + 'PictureUrl'] + '\n'
+
       robot.messageRoom room, response
-      robot.messageRoom room, result[1][type + 'PictureUrl']
 
 check_time = (timezone = 8) ->
   d = new Date()
