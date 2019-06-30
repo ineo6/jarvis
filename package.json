@@ -1,6 +1,6 @@
 {
   "name": "jarvis",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "ineo6 <arklove@qq.com>",
   "description": "A simple helpful robot",
   "dependencies": {
