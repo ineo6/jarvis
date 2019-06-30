@@ -1,1 +1,1 @@
-web: bin/hubot --name saber -a slack
+web: bin/hubot --name jarvis -a dingtalk
