@@ -1,0 +1,16 @@
+#!/bin/sh
+
+set -e
+
+# npm install
+export PATH="node_modules/.bin:node_modules/hubot/node_modules/.bin:$PATH"
+
+export HUBOT_DINGTALK_SECRET=LXJfbbWeqJFfgWCmdgPGt4R4FLThbKrB3NF-sMdLvqedwWdZkemMYDO67JIXkk3P
+export HUBOT_DINGTALK_AUTH_TYPE=sign
+export HUBOT_DINGTALK_BLACKLIST="cidAo3DoYPWuUjCYPythlEE2Q==,cidQbYItm5AQTF+Jj/GMSQdSfrUZqRMRUVukLY7pqv8nzI="
+export HUBOT_DINGTALK_MODE=1
+
+export EXPRESS_PORT=9999
+export HUBOT_GITLAB_HOOK_TOKEN=test
+export HUBOT_JENKINS_URL=https://liuqianqian:11387faec37d71ee34984bb4b831f811ad@jenkins.unovo.com.cn
+exec node_modules/.bin/hubot -a dingtalk --name "jarvis" "$@"

@@ -2,6 +2,5 @@
   "hubot-diagnostics",
   "hubot-help",
   "hubot-rules",
-  "hubot-pugme",
-  "hubot-cron-json"
+  "hubot-pugme"
 ]

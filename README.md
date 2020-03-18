@@ -20,3 +20,7 @@ jarvis是一个hubot机器人。
     jarvis animate me <query> - The same thing as `image me`, except adds [snip]
     jarvis help - Displays all of the help commands that myhubot knows about.
     ...
+
+### todo
+
+- gitlab信息接入
