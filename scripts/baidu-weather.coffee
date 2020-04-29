@@ -13,7 +13,7 @@
 # Author:
 #   ineo6 <arklove@qq.com>
 
-ak = process.env.HUBOT_BAIDU_AK or '9c9aa117da8912d2c59cb2efd941edd6'
+ak = process.env.HUBOT_BAIDU_AK or ''
 room = process.env.HUBOT_SLACK_EVENT_ROOM or 'Shell'
 
 module.exports = (robot) ->
